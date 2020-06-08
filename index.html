@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Andreas Batista Teixeira">
+  
+<title>LuzernLion.ch</title>
+  <link rel='stylesheet' href='css/style.css' >
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  
+
+  <style>      
+    canvas{
+        background: rgb(174,174,174);
+        opacity: 1;
+        position: absolute;
+    }    
+  
+  </style>  
+</head>  
+  <header class="main_h">
+
+      <div class="row">
+          <a class="logo" href="#">Luzern Lion</a>
+  
+          <div class="mobile-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+  
+          <nav>
+              <ul>
+                  <li><a href=".pimg1">RECENT</a></li>
+                  <li><a href=".pimg2">HISTORY</a></li>
+                  <li><a href=".pimg3">GUESTS</a></li>
+                  <li><a href=".pimg4">IMPRESSUM</a></li>
+              </ul>
+          </nav>
+  
+      </div> 
+
+  </header>
+
+<!-- tittelbild-->
+  <div class="titbild">
+      
+    <div class="hedintro">
+      
+      <canvas></canvas>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+      </script><script src="canvas.js"></script>
+      <h1 class="opener">Luzern Lion</h1>
+      
+    </div>
+  </div>
+    <!--Coockie API & Skript referenz-->
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+  <script src="script.js"></script>
+
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        Recent
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <h2>Current Constructions</h2>
+    <p id="News"></p>
+        <script>
+        xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+        let output = document.getElementById("News");
+        output.innerText = xhr.responseText;
+        }
+        xhr.open("GET", "text/news.txt", true);
+        xhr.send();
+        </script>
+  </section>
+
+  <div class="pimg2">
+      <div class="ptext">
+        <span class="border trans">
+          History
+        </span>
+      </div>
+    </div>
+  
+    <section class="section section-dark">
+      <h2>CV From Start till 2000</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+      </p>
+    </section>
+  
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans">
+          Guests
+        </span>
+      </div>
+    </div>
+  
+    <section class="section section-dark">
+      <h2>Interview With a Visitor</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+      </p>
+    </section>
+  
+    <div class="pimg4">
+      <div class="ptext">
+        <span class="border">
+          About
+        </span>
+      </div>
+    </div>
+  
+    <section class="section section-dark">
+      <h2>Impressum</h2>
+        <footer class="row">
+          <div class="container">
+            <nav>
+            <ul>
+              <li><a href="https://www.youtube.com/channel/UCwAptVS81Shc4hqWZJBVZZw?view_as=subscriber">
+                  <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/youtube_online_social_media_tube-512.png" width="75" height="75" title="youtube" alt="icon">
+                </a>
+              </ul>
+              <ul>
+              <li><a href="https://www.instagram.com/explore/tags/luzernlion/">
+                  <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png" width="75" height="75" title="instagram" alt="icon">
+                </a>
+              </ul>
+            </nav>
+          </div><!-- Ende Sozial media -->
+                   
+          <div class="impressum">
+
+    <a> Andreas Teixieira </a>
+    <a> Denkmalstrasse 9 </a>
+    <a> 6006 Luzern </a>
+    <a> andy.texi[at]hotmail.com </a>
+  </div><!-- Ende Impressum -->
+  </footer>
+        
+  </section>
+  </body>
+  </html>
+  
