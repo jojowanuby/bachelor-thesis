@@ -148,54 +148,6 @@ a {
   background: none;
 }
 
-
-/* Tittel annimation, inspiration: https://www.youtube.com/watch?v=JttTcnidSdQ&t=304s-->*/
-.titbild {
-  position: relative;
-}
-.hedintro {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.image-an {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  transform: scale(1.8);
-  animation: scaleImage 3s ease-out forwards;
-}
-.opener {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: calc(10px + 8vw);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #fff;
-  background-color:  rgba(174,174,174, .8);
-  mix-blend-mode: multiply;
-  opacity: 0;
-  animation: fadeInText 2s 1.5s ease-out forwards;
-}
-
-@keyframes scaleImage {
-  100% {
-      transform: scale(1);
-  }
-}
-
-@keyframes fadeInText {
-  100% {
-      opacity: 1;
-  }
-}
-
 /*Page Layout and content-->*/
 body, html{
   height:100%;
@@ -207,7 +159,7 @@ body, html{
   color:#666;
 }
 
-.pimg1, .pimg2, .pimg3, .pimg4{
+.pimg1, .pimg2, .pimg3, .pimg4, .kumu{
   position:relative;
   opacity:0.70;
   background-position:center;
@@ -217,17 +169,17 @@ body, html{
 }
 
 .pimg1{
-  background-image:url('../img/aktuell.jpeg');
+  background-image:url('../img/Home.jpg');
   min-height:100%;
 }
 
 .pimg2{
-  background-image:url('../img/Alt.jpeg');
+  background-image:url('../img/network.jpeg');
   min-height:400px;
 }
 
 .pimg3{
-  background-image:url('../img/Tourist.jpg');
+  background-image:url('../img/network.jpeg');
   min-height:400px;
 }
 
@@ -262,9 +214,16 @@ body, html{
   text-transform:uppercase;
 }
 
+h1{
+  font-size:35px;
+  text-align:center;
+  line-height: 1.5;
+}
+
 h2{
     font-size:30px;
     text-align:center;
+    line-height: 1.5;
   }
   
 p{
@@ -277,8 +236,17 @@ p{
   color:#fff;
   padding:20px;
   font-size:40px;
+  line-height: 1.5;
 }
 
+.linker{
+  background-color:rgb(107, 107, 107);
+  color:#fff;
+  padding:20px;
+  font-size:40px;
+  line-height: 1.5;
+
+}
 .ptext .border.trans{
   background-color:transparent;
 }
@@ -327,18 +295,18 @@ p2{
   
   
   .pimg1{
-    background-image:url('../img/aktuell.jpeg');
+    background-image:url('../img/Home.jpeg');
     min-height:100%;
   }
   
   .pimg2{
-    background-image:url('../img/Alt.jpeg');
+    background-image:url('../img/network.jpg');
     min-height:400px;
   }
   
   .pimg3{
-    background-image:url('../img/Tourist.jpg');
-    min-height:400px;
+    background-image:url('../img/network.jpg');
+    min-height:100%;
   }
   
   .pimg4{
@@ -375,6 +343,8 @@ p2{
   h2{
       font-size:25px;
       text-align:center;
+      line-height: 1.5;
+      
   
     }
     
@@ -388,6 +358,7 @@ p2{
       color:#fff;
       padding:20px;
       font-size:35px;
+      line-height: 1.5;
     }
   
   .ptext .border.trans{
